@@ -1,5 +1,4 @@
 import openai
-from info import OPENAI_API_KEY
 
 
 class ChatGPT:
