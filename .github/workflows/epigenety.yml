@@ -31,6 +31,14 @@ jobs:
           pip install instagrapi
           pip install pillow
       
+      - name: Create Images folder
+        working-directory: ./
+        run: |
+          ls -la
+          mkdir images
+          cd images
+          touch image.png
+          
       - name: execute main.py
         env:
           OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
