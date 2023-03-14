@@ -42,6 +42,6 @@ class Phase1(Prompt):
 
         self.prompt = self.PROMPT_FORMAT.format(self.animal, self.climate, self.era, self.artist, self.style)
 
-        self.prompt.replace('\n', '')
+        self.prompt = self.prompt.replace('\n', '')
 
         return self.prompt
