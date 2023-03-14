@@ -32,7 +32,7 @@ jobs:
           pip install pillow
       
       - name: Open Web Client Directory
-        working-directory: s./
+        working-directory: ./
         run: |
           ls -la
           
