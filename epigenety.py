@@ -1,5 +1,5 @@
 from instagrapi import Client
-
+from info import *
 
 class Epigenety:
 

@@ -1,5 +1,6 @@
 import openai
 
+from info import *
 
 class ChatGPT:
 

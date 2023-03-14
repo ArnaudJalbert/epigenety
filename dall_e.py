@@ -6,6 +6,8 @@ import requests
 import os
 from pathlib import Path
 
+from info import *
+
 
 class DallE:
 
