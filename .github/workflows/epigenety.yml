@@ -31,6 +31,11 @@ jobs:
           pip install instagrapi
           pip install pillow
       
+      - name: Open Web Client Directory
+        working-directory: s./
+        run: |
+          ls -la
+          
       - name: execute main.py
         env:
           OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
