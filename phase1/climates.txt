@@ -1,0 +1,50 @@
+Tropical rainforest climate
+Desert climate
+Mediterranean climate
+Humid subtropical climate
+Oceanic climate
+Steppe climate
+Tundra climate
+Ice cap climate
+Highland climate
+Polar climate
+Semi-arid climate
+Arid climate
+Subarctic climate
+Humid continental climate
+Alpine climate
+Monsoon climate
+Semi-desert climate
+Mediterranean forest climate
+Savanna climate
+Boreal climate
+Taiga climate
+Warm-summer Mediterranean climate
+Cold-summer Mediterranean climate
+Subtropical highland climate
+Alpine tundra climate
+Ice sheet climate
+Semi-tropical wet and dry climate
+Equatorial climate
+Semi-arctic climate
+Cool semi-arid climate
+Warm semi-arid climate
+Subtropical desert climate
+Cold semi-desert climate
+Polar tundra climate
+Polar ice cap climate
+Continental subarctic climate
+Continental warm summer climate
+Continental cool summer climate
+Subtropical rainforest climate
+Tropical savanna climate
+Humid continental hot summer climate
+Humid continental mild summer climate
+Warm oceanic climate
+Cold oceanic climate
+Warm-summer continental climate
+Cool-summer continental climate
+Humid subtropical hot-summer climate
+Humid subtropical mild-summer climate
+Marine west coast climate
+Maritime polar climate

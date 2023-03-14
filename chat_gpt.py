@@ -6,6 +6,8 @@ class ChatGPT:
 
     def __init__(self):
         self.open_ai = openai
+        self.chat_response = dict()
+        self.quote = str()
 
     def connect(self):
         self.open_ai.api_key = OPENAI_API_KEY
@@ -17,7 +19,7 @@ class ChatGPT:
         :return: (str) quote
         """
 
-        chat_response = self.open_ai.Completion.create(
+        self.chat_response = self.open_ai.Completion.create(
             engine="text-davinci-002",
             prompt="Give me a quote of" + str(prompt),
             max_tokens=1024,
@@ -26,7 +28,10 @@ class ChatGPT:
             temperature=0.5,
         )
 
-        return chat_response["choices"][0]["text"]
+        self.quote = self.chat_response["choices"][0]["text"]
+
+        return self.quote
+
 
 
 

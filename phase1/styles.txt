@@ -1,0 +1,10 @@
+Abstract
+Cartoon
+Realistic
+Minimalist
+Surreal
+Cyberpunk
+Futuristic
+Vintage
+Grunge
+Pop Art
