@@ -43,4 +43,4 @@ if __name__ == "__main__":
 
     description = DESCRIPTION.format(quote=quote, artist=prompt.artist, prompt=prompt)
 
-    epigenety.upload(image_path,quote)
+    epigenety.upload(image_path, description)
