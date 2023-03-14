@@ -1,4 +1,3 @@
-from info import *
 from instagrapi import Client
 
 
