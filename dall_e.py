@@ -49,6 +49,7 @@ class DallE:
             file_name = '.'.join([self.prompt.replace(' ', '_').replace('.', ''), 'png'])
 
             path = '/'.join([self.folder_destination, file_name])
+            path.replace('\n', '')
 
             with open(path, 'wb') as handler:
                 handler.write(img_data)
