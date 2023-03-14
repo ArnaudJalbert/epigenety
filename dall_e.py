@@ -50,7 +50,7 @@ class DallE:
 
             path = '/'.join([self.folder_destination, file_name])
 
-            with open(path, 'wb') as handler:
+            with open(path, 'w') as handler:
                 handler.write(img_data)
 
             image = Image.open(path)
