@@ -46,10 +46,9 @@ class DallE:
 
             img_data = requests.get(self.image_url).content
 
-            file_name = '.'.join([self.prompt.replace(' ', '_').replace('.', ''), 'png'])
+            file_name = 'image.png'
 
             path = '/'.join([self.folder_destination, file_name])
-            path.replace('\n', '')
 
             with open(path, 'wb') as handler:
                 handler.write(img_data)
