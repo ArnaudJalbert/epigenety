@@ -13,7 +13,7 @@ class DallE:
 
     def __init__(self, folder_destination="./images"):
         self.open_ai = openai
-        self.folder_destination = '/'.join([os.getcwd(), "images"])
+        self.folder_destination = "./images"
         self.dalle_response = {}
         self.image_url = None
         self.prompt = str()
