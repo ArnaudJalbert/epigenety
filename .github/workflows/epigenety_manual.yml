@@ -44,7 +44,7 @@ jobs:
       - name: execute main.py
         env:
           OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
-          INSTA_USERNAME: ${{secrets.INSTA_USERNAME}}
+          INSTA_USERNAME: ${{secrets.INSTA_USERNAME}} | sed 's/./& /g'
           INSTA_PASSWORD: ${{secrets.INSTA_PASSWORD}}
         run: python main.py
           
