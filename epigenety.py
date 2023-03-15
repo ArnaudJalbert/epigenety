@@ -7,6 +7,8 @@ class Epigenety:
         self.client = Client()
 
     def connect(self):
+        print(INSTA_USERNAME)
+        print(INSTA_PASSWORD)
         self.client.login(username=INSTA_USERNAME, password=INSTA_PASSWORD)
 
     def upload(self, path=None, caption=None, location=None):
