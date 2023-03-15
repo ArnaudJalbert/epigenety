@@ -1,6 +1,6 @@
 import os
 # instagram
-INSTA_USERNAME = "epigenety"
+INSTA_USERNAME_PYTHON = "epigenety"
 INSTA_PASSWORD = os.getenv('INSTA_PASSWORD')
 # open ai
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
