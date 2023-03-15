@@ -11,7 +11,7 @@ DESCRIPTION = "{quote} \n -{artist} \n\n Created with DALLE and ChatGPT from pro
 
 if __name__ == "__main__":
 
-    print("username", INSTA_USERNAME_PYTHON)
+    print("username ALLO", INSTA_USERNAME_PYTHON)
     print("openai", OPENAI_API_KEY)
 
     # generate the prompt
