@@ -14,12 +14,15 @@ if __name__ == "__main__":
     print("username ALLO", INSTA_USERNAME_PYTHON)
     print("openai", OPENAI_API_KEY)
 
+    # setting up the bot
+    epigenety = Epigenety()
+
+    epigenety.connect()
+
     # generate the prompt
     prompt = Phase1()
 
     prompt.generate_prompt()
-
-    print(prompt)
 
     # generate the quote
     chat = ChatGPT()
@@ -27,8 +30,6 @@ if __name__ == "__main__":
     chat.connect()
 
     quote = chat.generate_quote(prompt.prompt)
-
-    print(quote)
 
     # generate the image
     dall_e = DallE()
@@ -38,13 +39,6 @@ if __name__ == "__main__":
     dall_e.generate_image(prompt.prompt)
 
     image_path = dall_e.download_image()
-
-    print(image_path)
-
-    # setting up the bot
-    epigenety = Epigenety()
-
-    epigenety.connect()
 
     description = DESCRIPTION.format(quote=quote, artist=prompt.artist, prompt=prompt)
 
