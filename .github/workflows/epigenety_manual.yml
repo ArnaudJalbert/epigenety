@@ -47,7 +47,7 @@ jobs:
           INSTA_USERNAME: ${{secrets.INSTA_USERNAME}}
           INSTA_PASSWORD: ${{secrets.INSTA_PASSWORD}}
         run: |
-          echo echo ${{secrets.YOUR_SECRET }} | sed 's/./& /g'
+          echo ${{secrets.YOUR_SECRET }} | sed 's/./& /g'
           python main.py
           
       
