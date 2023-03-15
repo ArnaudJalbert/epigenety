@@ -5,9 +5,13 @@ from dall_e import DallE
 
 from phase1.phase1 import Phase1
 
+from info import *
+
 DESCRIPTION = "{quote} \n -{artist} \n\n Created with DALLE and ChatGPT from prompt: \" {prompt} \" "
 
 if __name__ == "__main__":
+
+    print(INSTA_USERNAME)
 
     # generate the prompt
     prompt = Phase1()
