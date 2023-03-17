@@ -2,6 +2,7 @@ import openai
 
 from info import *
 
+
 class ChatGPT:
 
     def __init__(self):
@@ -21,7 +22,7 @@ class ChatGPT:
 
         self.chat_response = self.open_ai.Completion.create(
             engine="text-davinci-002",
-            prompt="Give me a quote of" + str(prompt),
+            prompt="Tell me a story of this description: " + str(prompt),
             max_tokens=1024,
             n=1,
             stop=None,
