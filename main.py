@@ -22,10 +22,7 @@ def main():
         # generate the prompt
         prompt = Phase1()
 
-
         prompt.generate_prompt()
-
-
 
         # generate the quote
         chat = ChatGPT()
