@@ -4,8 +4,12 @@ from chat_gpt import ChatGPT
 from dall_e import DallE
 
 from phase1.phase1 import Phase1
+from phase2.phase2 import Phase2
+from phase3.phase3 import Phase3
+from phase4.phase4 import Phase4
+from phase5.phase5 import Phase5
 
-DESCRIPTION = "{quote} \n -{artist} \n\n Created with DALLE and ChatGPT from prompt: \" {prompt} \" "
+DESCRIPTION = "{quote} \n -{person}"
 
 current_attempt = 0
 MAX_ATTEMPTS = 10
@@ -13,43 +17,44 @@ MAX_ATTEMPTS = 10
 
 def main():
 
-    try:
-        # setting up the bot
-        epigenety = Epigenety()
+    print("Starting")
+    # setting up the bot
+    epigenety = Epigenety()
 
-        epigenety.connect()
+    epigenety.connect()
+    print("Connected to instagram")
 
-        # generate the prompt
-        prompt = Phase1()
+    # generate the prompt
+    prompt = Phase5()
 
-        prompt.generate_prompt()
+    prompt.generate_prompt()
+    print("Prompt generated")
 
-        # generate the quote
-        chat = ChatGPT()
+    print(prompt.prompt)
 
-        chat.connect()
+    # generate the quote
+    chat = ChatGPT()
 
-        quote = chat.generate_quote(prompt.prompt)
+    chat.connect()
 
-        # generate the image
-        dall_e = DallE()
+    quote = chat.generate_quote(prompt.prompt)
+    print("Quote generated")
 
-        dall_e.connect()
+    # generate the image
+    dall_e = DallE()
 
-        dall_e.generate_image(prompt.prompt)
+    dall_e.connect()
 
-        image_path = dall_e.download_image()
+    dall_e.generate_image(prompt)
 
-        description = DESCRIPTION.format(quote=quote, artist=prompt.artist, prompt=prompt)
+    print("Image generated")
 
-        epigenety.upload(image_path, description)
+    image_path = dall_e.download_image()
 
-    except Exception:
-        if current_attempt < 10:
-            main()
-        else:
-            exit(1)
+    description = DESCRIPTION.format(quote=quote, person=prompt.person)
 
+    epigenety.upload(image_path, description)
+    print("Post uploaded")
 
 
 if __name__ == "__main__":

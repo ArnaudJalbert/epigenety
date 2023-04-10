@@ -32,7 +32,7 @@ class DallE:
 
         # Make the API request
         self.dalle_response = openai.Image.create(
-            prompt=self.prompt,
+            prompt="Show us an artificial environment in the eyes of " + str(self.prompt.person),
             n=1,
             size="1024x1024"
         )

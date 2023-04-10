@@ -22,7 +22,7 @@ class ChatGPT:
 
         self.chat_response = self.open_ai.Completion.create(
             engine="text-davinci-002",
-            prompt="Tell me a story of this description: " + str(prompt),
+            prompt=str(prompt) + " in at least 2000 characters but less than 2200. Add a warnign add the end that the essay is not real.",
             max_tokens=1024,
             n=1,
             stop=None,
