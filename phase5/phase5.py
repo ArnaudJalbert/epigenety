@@ -5,7 +5,8 @@ import random
 
 class Phase5(Prompt):
 
-    PROMPT_FORMAT = "How would {} describe the comparison of the definition of Nature, Artificial and Wilderness in an essay form differently than others."
+    PROMPT_FORMAT = "How would {} describe the comparison of the definition of Nature, Artificial and Wilderness in an essay form differently than others." \
+                    "Explain the differences between the definitions of Nature, Artificial and Wilderness."
 
     def __init__(self):
         super(Phase5, self).__init__()
